@@ -1,0 +1,37 @@
+//Test this code maybe there are some bugs
+
+//Production shifted
+
+{
+  "name": "Testing",
+  "scans": [
+    {
+      "scan_config_request": {
+        "target_url": {
+          "url": "http://www.example.com",
+          "http_and_https": true,
+          "directory_restriction_type": "DIRECTORY_AND_SUBDIRECTORY"
+        },
+      "crawl_configuration": {
+        "scripts": [
+          {
+            "crawl_script_data": {
+              "script_type": "SELENIUM",
+              "script_body": "<escaped JSON>"
+            },
+            "name": "ExampleCrawlScript.side"
+          }
+        ],
+        "disabled": false
+      }
+        }
+    }
+  ],
+  "schedule": {
+    "now": true,
+    "duration": {
+      "length": 1,
+      "unit": "DAY"
+    }
+  }
+}
